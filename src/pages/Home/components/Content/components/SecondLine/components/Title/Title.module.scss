@@ -1,0 +1,11 @@
+.title_container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+
+  div {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}

@@ -1,6 +1,6 @@
 import s from "./FirstLine.module.scss";
-import Calculator from "./components/Calculator/Calculator";
-import Description from "./components/Description/Description";
+import Calculator from "../components/Calculator/layout/Calculator";
+import Description from "../components/Description/layout/Description";
 
 const FirstLine = () => {
   return (

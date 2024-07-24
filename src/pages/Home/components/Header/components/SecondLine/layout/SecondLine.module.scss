@@ -4,22 +4,6 @@
   align-items: center;
   height: 41px;
 
-  .active_container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    font-weight: 700;
-    font-size: 16px;
-
-    a:first-child {
-      border-bottom: 2px dashed #8b5cf6;
-    }
-
-    a:nth-child(odd) {
-      color: #8b5cf6;
-    }
-  }
-
   .btn {
     width: 196px;
     height: 44px;

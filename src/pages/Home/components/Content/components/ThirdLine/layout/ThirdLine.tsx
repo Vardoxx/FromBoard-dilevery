@@ -1,5 +1,5 @@
-import Sertificates from "./components/Sertificates/Sertificates";
-import Title from "./components/Title/Title";
+import Sertificates from "../components/Sertificates/Sertificates";
+import Title from "../components/Title/Title";
 import s from "./ThirdLine.module.scss";
 
 const ThirdLine = () => {
