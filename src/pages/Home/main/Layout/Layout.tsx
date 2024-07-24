@@ -1,5 +1,5 @@
-import Header from "../../components/Header/components/main/Header";
-import Content from "../../components/Content/main/Content";
+import Header from "../../components/Header/layout/Header";
+import Content from "../../components/Content/layout/Content";
 import s from "./Layout.module.scss";
 
 const Layout = () => {

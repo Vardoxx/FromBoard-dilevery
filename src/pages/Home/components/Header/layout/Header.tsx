@@ -1,5 +1,5 @@
-import FirstLine from "../FirstLine/FirstLine";
-import SecondLine from "../SecondLine/SecondLine";
+import FirstLine from "../components/FirstLine/FirstLine";
+import SecondLine from "../components/SecondLine/SecondLine";
 import s from "./Header.module.scss";
 
 const Header = () => {

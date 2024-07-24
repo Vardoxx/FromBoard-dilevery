@@ -1,5 +1,6 @@
 import FirstLine from "../components/FirstLine/FirstLine";
 import SecondLine from "../components/SecondLine/SecondLine";
+import ThirdLine from "../components/ThirdLine/ThirdLine";
 import s from "./Content.module.scss";
 
 const Content = () => {
@@ -7,6 +8,7 @@ const Content = () => {
     <div className={s.content}>
       <FirstLine />
       <SecondLine />
+      <ThirdLine />
     </div>
   );
 };
