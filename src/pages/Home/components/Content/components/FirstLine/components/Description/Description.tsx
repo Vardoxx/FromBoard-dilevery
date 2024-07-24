@@ -1,4 +1,4 @@
-import DescriptionIMG from "./ui/content-first-line-img.png";
+import DescriptionIMG from "./img/descriptionIMG.png";
 import s from "./Description.module.scss";
 
 const Description = () => {
