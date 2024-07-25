@@ -4,10 +4,10 @@ import Title from "../components/Title/Title";
 
 const SecondLine = () => {
   return (
-    <div className={s.second_line}>
+    <section className={s.second_line}>
       <Title />
       <Reseptions />
-    </div>
+    </section>
   );
 };
 

@@ -4,13 +4,13 @@ import s from "./ThirdLine.module.scss";
 
 const ThirdLine = () => {
   return (
-    <div className={s.third_line}>
+    <section className={s.third_line}>
       <Title />
       <Sertificates />
       <div className={s.btn_container}>
         <a href="@">Показать больше документов</a>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,10 +4,10 @@ import s from "./FiveLine.module.scss";
 
 const FiveLine = () => {
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <Title />
       <Inputs />
-    </div>
+    </section>
   );
 };
 

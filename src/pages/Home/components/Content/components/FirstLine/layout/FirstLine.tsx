@@ -4,10 +4,10 @@ import Description from "../components/Description/layout/Description";
 
 const FirstLine = () => {
   return (
-    <div className={s.first_line}>
+    <section className={s.first_line}>
       <Description />
       <Calculator />
-    </div>
+    </section>
   );
 };
 

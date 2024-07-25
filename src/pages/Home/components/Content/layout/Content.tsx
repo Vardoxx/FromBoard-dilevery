@@ -7,13 +7,13 @@ import s from "./Content.module.scss";
 
 const Content = () => {
   return (
-    <div className={s.content}>
+    <section className={s.content}>
       <FirstLine />
       <SecondLine />
       <ThirdLine />
       <FourLine />
       <FiveLine />
-    </div>
+    </section>
   );
 };
 

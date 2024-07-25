@@ -4,10 +4,10 @@ import s from "./FourLine.module.scss";
 
 const FourLine = () => {
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <Title />
       <FeedBack />
-    </div>
+    </section>
   );
 };
 

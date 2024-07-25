@@ -4,10 +4,10 @@ import s from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div className={s.header}>
+    <header className={s.container}>
       <FirstLine />
       <SecondLine />
-    </div>
+    </header>
   );
 };
 
