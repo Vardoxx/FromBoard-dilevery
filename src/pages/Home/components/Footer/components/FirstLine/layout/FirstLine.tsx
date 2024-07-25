@@ -1,12 +1,14 @@
-import Description from "../components/Description/Description";
 import Logo from "../../../../../../../ui/Logo/Logo";
+import Actives from "../components/Actives/Actives";
+import Number from "../components/Number/Number";
 import s from "./FirstLine.module.scss";
 
 const FirstLine = () => {
   return (
     <div className={s.container}>
-      <Logo color={{ color: "black" }} />
-      <Description />
+      <Logo color={{ color: "#F9FAFB" }} />
+      <Actives />
+      <Number />
     </div>
   );
 };

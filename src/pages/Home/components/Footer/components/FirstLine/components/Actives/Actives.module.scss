@@ -1,0 +1,13 @@
+.actives_container {
+  display: flex;
+  box-sizing: content-box;
+  gap: 24px;
+  align-items: center;
+
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f9fafb;
+  }
+}
