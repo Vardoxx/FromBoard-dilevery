@@ -1,3 +1,4 @@
+import Button from "../../../../../../../ui/Button/Button";
 import Actives from "../components/Actives/Actives";
 import s from "./SecondLine.module.scss";
 
@@ -6,9 +7,11 @@ const SecondLine = () => {
     <div className={s.line}>
       <Actives />
       <div>
-        <a className={s.btn} href="@">
-          Оставить Заявку
-        </a>
+        <Button
+          width={{ width: "196px" }}
+          height={{ height: "44px" }}
+          label="Оставить Заявку"
+        />
       </div>
     </div>
   );

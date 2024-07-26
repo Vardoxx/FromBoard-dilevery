@@ -3,10 +3,11 @@ import firstSertificateIMG from "./img/firstSertificateIMG.png";
 import secondSertificateIMG from "./img/secondSertificateIMG.png";
 import thirdSertificateIMG from "./img/thirdSertificateIMG.png";
 import fourSertificateIMG from "./img/fourSertificateIMG.png";
+import Button from "../../../../../../../../ui/Button/Button";
 
 const Sertificates = () => {
   return (
-    <div>
+    <div className={s.container}>
       <div className={s.certificate_container}>
         <div>
           <img src={firstSertificateIMG} alt="" />
@@ -27,6 +28,13 @@ const Sertificates = () => {
           <img src={fourSertificateIMG} alt="" />
           <div>Свидетельство o регистрации в Великобритнии</div>
         </div>
+      </div>
+      <div className={s.btn_container}>
+        <Button
+          width={{ width: "auto" }}
+          height={{ height: "auto" }}
+          label="Показать больше документов"
+        />
       </div>
     </div>
   );

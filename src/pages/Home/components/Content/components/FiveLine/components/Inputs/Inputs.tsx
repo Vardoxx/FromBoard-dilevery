@@ -1,3 +1,4 @@
+import Button from "../../../../../../../../ui/Button/Button";
 import s from "./Inputs.module.scss";
 
 const Inputs = () => {
@@ -12,11 +13,11 @@ const Inputs = () => {
       <div className={s.textarea_container}>
         <textarea id="" placeholder="Сообщение..."></textarea>
       </div>
-      <div className={s.bottom_btn}>
-        <a className="content-first-line-input-container-btn" href="@">
-          Оставить Заявку
-        </a>
-      </div>
+      <Button
+        width={{ width: "auto" }}
+        height={{ height: "auto" }}
+        label="Оставить Заявку"
+      />
     </div>
   );
 };
