@@ -1,7 +1,8 @@
 import s from "./Active.module.scss";
 
 interface ActiveProps {
-  href: string;
+  href?: string;
+  onClick?: () => void;
   label: string;
   color?: string;
   borderBottom?: string;
@@ -9,6 +10,7 @@ interface ActiveProps {
 
 const Active: React.FC<ActiveProps> = ({
   href,
+  onClick,
   label,
   color,
   borderBottom,
@@ -16,6 +18,7 @@ const Active: React.FC<ActiveProps> = ({
   return (
     <a
       href={href}
+      onClick={onClick}
       style={{
         borderBottom: borderBottom ? borderBottom : "none",
         color: color ? color : "none",
