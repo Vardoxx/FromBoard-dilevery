@@ -7,9 +7,6 @@ const ThirdLine = () => {
     <section className={s.third_line}>
       <Title />
       <Sertificates />
-      <div className={s.btn_container}>
-        <a href="@">Показать больше документов</a>
-      </div>
     </section>
   );
 };

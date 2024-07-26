@@ -10,26 +10,6 @@
     gap: 24px;
     grid-template-columns: min-content min-content;
     justify-content: space-between;
-
-    input {
-      box-sizing: border-box;
-
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 12px;
-      gap: 4px;
-
-      width: 236px;
-      height: 48px;
-
-      border: 2px solid #111827;
-      border-radius: 4px;
-
-      flex: none;
-      order: 0;
-      flex-grow: 1;
-    }
   }
   .textarea_container {
     display: flex;
@@ -45,23 +25,5 @@
       gap: 4px;
       resize: none;
     }
-  }
-}
-
-.bottom_btn {
-  display: flex;
-  justify-content: center;
-  padding: 10px 28px 10px 28px;
-  gap: 4px;
-  border-radius: 4px;
-
-  background-color: #8b5cf6;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-
-  a {
-    color: #f9fafb;
   }
 }

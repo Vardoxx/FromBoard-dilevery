@@ -1,26 +1,28 @@
+import Button from "../../../../../../../../../../ui/Button/Button";
+import Input from "../../../../../../../../../../ui/Input/Input";
 import s from "./Inputs.module.scss";
 
 const Inputs = () => {
   return (
     <div className={s.input_container}>
       <div className={s.top_input}>
-        <input type="name" placeholder="Имя" />
+        <Input type="name" placeholder="Имя" width={{ width: "496px" }} />
       </div>
       <div className={s.middle_inputs}>
-        <input type="email" placeholder="Почта" />
-        <input type="tel" placeholder="Телефон" />
-        <input type="number" placeholder="Общая площадь, м²" />
-        <input type="number" placeholder="Bec, кг" />
-        <input type="text" placeholder="Страна покупки" />
-        <input type="text" placeholder="Город покупки" />
-        <input type="text" placeholder="Область доставки" />
-        <input type="text" placeholder="Город доставки" />
+        <Input type="email" placeholder="Почта" />
+        <Input type="tel" placeholder="Телефон" />
+        <Input type="number" placeholder="Общая площадь, м²" />
+        <Input type="number" placeholder="Bec, кг" />
+        <Input type="text" placeholder="Страна покупки" />
+        <Input type="text" placeholder="Город покупки" />
+        <Input type="text" placeholder="Область доставки" />
+        <Input type="text" placeholder="Город доставки" />
       </div>
-      <div className={s.bottom_btn}>
-        <a className="content-first-line-input-container-btn" href="@">
-          Оставить Заявку
-        </a>
-      </div>
+      <Button
+        width={{ width: "auto" }}
+        height={{ height: "auto" }}
+        label="Оставить Заявку"
+      />
     </div>
   );
 };
