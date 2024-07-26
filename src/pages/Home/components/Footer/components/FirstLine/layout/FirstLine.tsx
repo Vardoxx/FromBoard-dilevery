@@ -6,7 +6,7 @@ import s from "./FirstLine.module.scss";
 const FirstLine = () => {
   return (
     <div className={s.container}>
-      <Logo color={{ color: "#F9FAFB" }} />
+      <Logo color={"#F9FAFB"} />
       <Actives />
       <Number />
     </div>
