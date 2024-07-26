@@ -6,26 +6,7 @@
   gap: 28px;
 
   .top_input {
-    input {
-      box-sizing: border-box;
-
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 12px;
-      gap: 4px;
-
-      width: 496px;
-      height: 48px;
-
-      border: 2px solid #111827;
-      border-radius: 4px;
-
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      flex-grow: 0;
-    }
+    display: flex;
   }
 
   .middle_inputs {
@@ -33,25 +14,5 @@
     gap: 24px;
     grid-template-columns: min-content min-content;
     justify-content: space-between;
-
-    input {
-      box-sizing: border-box;
-
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 12px;
-      gap: 4px;
-
-      width: 236px;
-      height: 48px;
-
-      border: 2px solid #111827;
-      border-radius: 4px;
-
-      flex: none;
-      order: 0;
-      flex-grow: 1;
-    }
   }
 }
