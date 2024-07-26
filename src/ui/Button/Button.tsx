@@ -1,9 +1,8 @@
 import s from "./Button.module.scss";
 
 interface BtnProps {
-  width: Record<string, string>;
-  height: Record<string, string>;
-
+  width: string;
+  height: string;
   label: string;
 }
 
@@ -12,8 +11,8 @@ const Button: React.FC<BtnProps> = ({ height, width, label }) => {
     <a
       className={s.btn}
       style={{
-        width: width["width"],
-        height: height["height"],
+        width: width,
+        height: height,
       }}
       href="@"
     >
