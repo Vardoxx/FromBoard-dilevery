@@ -1,13 +1,13 @@
 name: Inspection
 
-on:
-  push: push
+on: push
 
 jobs:
   inspect:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Get code
+        uses: actions/checkout@v3
       - name: Inspect
         run: npm run lint
