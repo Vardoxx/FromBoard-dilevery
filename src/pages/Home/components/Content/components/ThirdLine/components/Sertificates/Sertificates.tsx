@@ -31,8 +31,8 @@ const Sertificates = () => {
       </div>
       <div className={s.btn_container}>
         <Button
-          width={{ width: "auto" }}
-          height={{ height: "auto" }}
+          width={"auto"}
+          height={"auto"}
           label="Показать больше документов"
         />
       </div>

@@ -3,8 +3,8 @@ import s from "./Input.module.scss";
 interface InputProps {
   type: string;
   placeholder: string;
-  width?: Record<string, string>;
-  height?: Record<string, string>;
+  width?: string;
+  height?: string;
 }
 
 const Input: React.FC<InputProps> = ({ type, placeholder, width, height }) => {
@@ -13,8 +13,8 @@ const Input: React.FC<InputProps> = ({ type, placeholder, width, height }) => {
       type={type}
       placeholder={placeholder}
       style={{
-        width: width ? width["width"] : "none",
-        height: height ? height["height"] : "none",
+        width: width ? width : "none",
+        height: height ? height : "none",
       }}
       className={s.input}
     />
