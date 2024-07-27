@@ -6,7 +6,7 @@ const Inputs = () => {
   return (
     <div className={s.input_container}>
       <div className={s.top_input}>
-        <Input type="name" placeholder="Имя" width={{ width: "496px" }} />
+        <Input type="name" placeholder="Имя" width={"496px"} />
       </div>
       <div className={s.middle_inputs}>
         <Input type="email" placeholder="Почта" />
@@ -18,11 +18,7 @@ const Inputs = () => {
         <Input type="text" placeholder="Область доставки" />
         <Input type="text" placeholder="Город доставки" />
       </div>
-      <Button
-        width={{ width: "auto" }}
-        height={{ height: "auto" }}
-        label="Оставить Заявку"
-      />
+      <Button width={"auto"} height={"auto"} label="Заказать расчёт" />
     </div>
   );
 };

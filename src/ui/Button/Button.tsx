@@ -4,9 +4,10 @@ interface BtnProps {
   width: string;
   height: string;
   label: string;
+  onClick?: () => void;
 }
 
-const Button: React.FC<BtnProps> = ({ height, width, label }) => {
+const Button: React.FC<BtnProps> = ({ height, width, label, onClick }) => {
   return (
     <a
       className={s.btn}
@@ -14,7 +15,7 @@ const Button: React.FC<BtnProps> = ({ height, width, label }) => {
         width: width,
         height: height,
       }}
-      href="@"
+      onClick={onClick}
     >
       {label}
     </a>

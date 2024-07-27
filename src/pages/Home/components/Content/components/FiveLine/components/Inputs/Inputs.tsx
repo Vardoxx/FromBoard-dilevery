@@ -14,11 +14,7 @@ const Inputs = () => {
       <div className={s.textarea_container}>
         <textarea id="" placeholder="Сообщение..."></textarea>
       </div>
-      <Button
-        width={{ width: "auto" }}
-        height={{ height: "auto" }}
-        label="Оставить Заявку"
-      />
+      <Button width={"auto"} height={"auto"} label="Оставить Заявку" />
     </div>
   );
 };
