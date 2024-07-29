@@ -1,0 +1,21 @@
+.title_container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center; /* Центрирует дочерние элементы по горизонтали */
+  align-items: center; /* Центрирует дочерние элементы по вертикали */
+  gap: 12px;
+
+  div {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .second_title {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 756px;
+  }
+}
