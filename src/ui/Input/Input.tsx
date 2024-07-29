@@ -7,6 +7,7 @@ interface InputProps {
   type: string;
   placeholder: string;
   typeChecker: string;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   maxLength?: number;
   width?: string;
   height?: string;
@@ -19,6 +20,8 @@ const Input: React.FC<InputProps> = ({
   width,
   height,
   typeChecker,
+  onChange,
+  ...props
 }) => {
   const [err, setErr] = useState(false);
   const [block, setBlock] = useState(false);
@@ -34,13 +37,14 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <input
+      {...props}
       type={type}
       placeholder={placeholder}
       style={{
         width: width ? width : "none",
         height: height ? height : "none",
       }}
-      onChange={inputChecker}
+      onChange={onChange}
       className={`${s.input} ${err ? s.inputErr : ""}`}
       maxLength={maxLength}
       disabled={block}
