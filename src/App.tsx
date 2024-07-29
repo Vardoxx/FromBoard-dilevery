@@ -1,5 +1,5 @@
 import "./App.css";
-import HomePage from "./pages/Home/layout/HomePage";
+import HomePage from "./pages/Home/HomePage";
 
 const App = () => {
   return (
