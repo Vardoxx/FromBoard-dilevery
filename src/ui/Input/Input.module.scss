@@ -17,3 +17,7 @@
   order: 0;
   flex-grow: 1;
 }
+
+.inputErr::placeholder {
+  color: red;
+}
