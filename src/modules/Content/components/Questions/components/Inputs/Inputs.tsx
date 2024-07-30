@@ -6,10 +6,10 @@ const Inputs = () => {
   return (
     <div className={s.input_container}>
       <div className={s.middle_inputs}>
-        <Input typeChecker="txt" type="name" placeholder="Имя" />
-        <Input typeChecker="txt" type="email" placeholder="Почта" />
-        <Input typeChecker="number" type="tel" placeholder="Телефон" />
-        <Input typeChecker="txt" type="text" placeholder="Тема вопроса" />
+        <Input type="name" placeholder="Имя" />
+        <Input type="email" placeholder="Почта" />
+        <Input type="tel" placeholder="Телефон" />
+        <Input type="text" placeholder="Тема вопроса" />
       </div>
       <div className={s.textarea_container}>
         <textarea id="" placeholder="Сообщение..."></textarea>

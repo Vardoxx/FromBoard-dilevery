@@ -1,13 +1,12 @@
-import { ChangeEvent, useState } from "react";
-import numberChecker from "../../modules/inputCheckers/numberChecker";
-import textChecker from "../../modules/inputCheckers/textChecker";
 import s from "./Input.module.scss";
 
 interface InputProps {
   type: string;
   placeholder: string;
-  typeChecker: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  name?: string;
+  onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void | undefined;
+  onChange?: (event: React.FocusEvent<HTMLInputElement>) => void | undefined;
   maxLength?: number;
   width?: string;
   height?: string;
@@ -16,38 +15,28 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({
   type,
   placeholder,
+  onBlur,
+  onChange,
+  value,
+  name,
   maxLength,
   width,
   height,
-  typeChecker,
-  onChange,
-  ...props
 }) => {
-  const [err, setErr] = useState(false);
-  const [block, setBlock] = useState(false);
-
-  const inputChecker = (e: ChangeEvent<HTMLInputElement>) => {
-    if (typeChecker === "txt") {
-      textChecker(e, placeholder, setErr, setBlock);
-    }
-    if (typeChecker === "number") {
-      numberChecker(e, placeholder, setErr, setBlock);
-    }
-  };
-
   return (
     <input
-      {...props}
+      onChange={onChange}
+      value={value}
       type={type}
       placeholder={placeholder}
       style={{
         width: width ? width : "none",
         height: height ? height : "none",
       }}
-      onChange={onChange}
-      className={`${s.input} ${err ? s.inputErr : ""}`}
+      className={s.input}
       maxLength={maxLength}
-      disabled={block}
+      name={name}
+      onBlur={onBlur}
     />
   );
 };
