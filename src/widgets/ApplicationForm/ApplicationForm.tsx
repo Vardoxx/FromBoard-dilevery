@@ -1,6 +1,5 @@
 import { IoMdClose } from "react-icons/io";
 import { mainColors } from "../../helpers/MainColors/MainColors";
-import Input from "../../ui/Input/Input";
 import Button from "../../ui/Button/Button";
 import s from "./ApplicationForm.module.scss";
 
@@ -23,10 +22,10 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
           <IoMdClose />
         </div>
         <div className={s.middle_inputs}>
-          <Input type="name" placeholder="Имя" />
-          <Input type="email" placeholder="Почта" />
-          <Input type="tel" placeholder="Телефон" />
-          <Input type="text" placeholder="Тип товара" />
+          <input type="name" placeholder="Имя" />
+          <input type="email" placeholder="Почта" />
+          <input type="tel" placeholder="Телефон" />
+          <input type="text" placeholder="Тип товара" />
         </div>
         <div className={s.textarea_container}>
           <textarea id="" placeholder="Описание товара..."></textarea>
