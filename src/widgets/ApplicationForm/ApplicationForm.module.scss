@@ -25,7 +25,7 @@
 
   .middle_inputs {
     display: grid;
-    gap: 24px;
+    gap: 12px;
     grid-template-columns: min-content min-content;
     justify-content: space-between;
   }
@@ -35,7 +35,7 @@
 
     textarea {
       display: flex;
-      width: 496px;
+      width: calc(496px + 12px);
       padding: 12px;
       height: 150px;
       border-radius: 4px;
