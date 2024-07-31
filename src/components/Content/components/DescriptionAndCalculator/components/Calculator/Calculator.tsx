@@ -1,3 +1,5 @@
+import { FormContext } from "../../../../../../context/formContext";
+
 import Title from "../../../../../../ui/Title/Title";
 import s from "./Calculator.module.scss";
 import Inputs from "./components/Form/Form";
@@ -12,7 +14,9 @@ const Calculator = () => {
         flexDirection="column"
         textAlign="center"
       />
-      <Inputs />
+      <FormContext>
+        <Inputs />
+      </FormContext>
     </div>
   );
 };
