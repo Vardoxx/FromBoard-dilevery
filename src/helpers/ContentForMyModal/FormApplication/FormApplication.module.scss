@@ -1,0 +1,6 @@
+.inputs_container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content;
+  justify-content: space-between;
+}
