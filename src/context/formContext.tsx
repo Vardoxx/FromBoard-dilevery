@@ -14,6 +14,7 @@ export interface InputForm {
   productType: string;
   questionType: string;
   message: string;
+  moreInfo: string;
 }
 
 export const FormContext = ({ children }: PropsWithChildren) => {
